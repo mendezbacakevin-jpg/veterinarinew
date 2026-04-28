@@ -1,3 +1,26 @@
 spring:
   application:
-    name: veterinaria
+    name: Veterinaria
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vidaanimal?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Mysql_Server
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mendezbacakevin@gmail.com
+    password: dvvwlqxeafeazicc
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
